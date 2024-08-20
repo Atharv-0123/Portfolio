@@ -1,0 +1,28 @@
+- .gitignore
+- package-lock.json
+- package.json
+- public
+  - favicon.ico
+  - index.html
+  - logo192.png
+  - logo512.png
+  - manifest.json
+  - robots.txt
+- README.md
+- requirements.txt
+- src
+  - App.css
+  - App.js
+  - components
+    - navbar.jsx
+  - index.css
+  - index.js
+  - logo.svg
+  - Navbar.css
+  - reportWebVitals.js
+  - routes
+    - About.js
+    - Contact.js
+    - Home.js
+    - Projects.js
+  - setupTests.js
