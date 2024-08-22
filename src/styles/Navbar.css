@@ -10,7 +10,7 @@
 }
 
 .nav-menu li{
-    padding: 0 1rem;
+    padding: 1rem;
 }
 
 nav-menu li a{
@@ -18,7 +18,8 @@ nav-menu li a{
     font-weight: 500;
 }
 
-@media screen and (max-width){
+
+@media screen and (max-width:1040px){
     .nav-menu{
         flex-direction: column;
         justify-content: center;
@@ -28,10 +29,29 @@ nav-menu li a{
         background: rgba(0,0,0,0.9);
         position: absolute;
         top: 0;
-        left: 0;
+        left: 0%;
         z-index: -3;
     }
 }
 
+.hamburger{
+    display: initial;
+}
 
+.nav-menu li a{
+    font-size: 2rem;
+}
 
+.hamburger-icon {
+    transition: transform 0.1s ease-in-out, color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  }
+  
+  .hamburger-icon:hover {
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5); /* White shadow */
+  }
+  
+  .hamburger-icon:active {
+    transform: scale(0.9);
+    color: #ccc;
+  }
+  
