@@ -1,6 +1,7 @@
 - .gitignore
 - package-lock.json
 - package.json
+- project_structure.text
 - public
   - favicon.ico
   - index.html
@@ -11,14 +12,10 @@
 - README.md
 - requirements.txt
 - src
-  - App.css
   - App.js
   - components
-    - navbar.jsx
-  - index.css
   - index.js
   - logo.svg
-  - Navbar.css
   - reportWebVitals.js
   - routes
     - About.js
@@ -26,3 +23,6 @@
     - Home.js
     - Projects.js
   - setupTests.js
+  - styles
+    - App.css
+    - index.css
