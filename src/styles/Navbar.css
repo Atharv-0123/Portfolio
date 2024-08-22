@@ -29,8 +29,9 @@ nav-menu li a{
         background: rgba(0,0,0,0.9);
         position: absolute;
         top: 0;
-        left: 0%;
+        left: -100%;
         z-index: -3;
+        transition: 0.3s;
     }
 }
 
@@ -40,6 +41,10 @@ nav-menu li a{
 
 .nav-menu li a{
     font-size: 2rem;
+}
+
+.nav-menu.activ{
+    left:0;
 }
 
 .hamburger-icon {
