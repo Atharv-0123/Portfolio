@@ -1,7 +1,6 @@
 - .gitignore
 - package-lock.json
 - package.json
-- project_structure.text
 - public
   - favicon.ico
   - index.html
@@ -13,10 +12,30 @@
 - requirements.txt
 - src
   - App.js
+  - assets
+    - animefacegen.png
+    - animefacegen2.png
+    - anomalydetect1.jpg
+    - anomalydetect2.jpg
+    - anomalydetect3.jpg
+    - cool-background.png
+    - expense1.jpeg
+    - expense2.jpeg
+    - intro-bg.jpg
+    - kisaan-link1.jpg
+    - kisaan-link2.jpg
+    - restaurant1.jpg
+    - restaurant2.jpg
   - components
+    - Footer.jsx
+    - Heroimg.jsx
+    - Heroimg2.jsx
+    - Navbar.jsx
+    - Work.jsx
+    - WorkCard.jsx
+    - WorkCardData.jsx
   - index.js
   - logo.svg
-  - reportWebVitals.js
   - routes
     - About.js
     - Contact.js
@@ -25,4 +44,9 @@
   - setupTests.js
   - styles
     - App.css
+    - Footer.css
+    - Heroimg.css
+    - Heroimg2.css
     - index.css
+    - Navbar.css
+    - WorkCard.css
