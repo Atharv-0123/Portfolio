@@ -1,51 +1,58 @@
-import React, { useState } from 'react'
-import '../styles/Navbar.css'
-import { Link } from 'react-router-dom'
-import {FaBars, FaTimes} from 'react-icons/fa'
+import React, { useState, useEffect, useCallback, useRef } from 'react';
+import '../styles/Navbar.css';
+import { Link } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
+    const [click, setClick] = useState(false);
+    const [color, setColor] = useState(false);
+    const [scrollingUp, setScrollingUp] = useState(false);
+    const lastScrollTopRef = useRef(0);
 
-    const[click,setClick] = useState(false)
-    const handleClick = () => setClick(!click)
+    const handleClick = () => setClick(!click);
 
-    const[color,setColor] = useState(false)
-    const changeColor = ()=>{
-      if(window.scrollY >= 100){
-        setColor(true)
-    }
-    else{
-      setColor(false)
-    }
-    }
-    window.addEventListener("scroll",changeColor)
+    const handleScroll = useCallback(() => {
+        const currentScroll = window.scrollY;
+        const lastScrollTop = lastScrollTopRef.current;
+        if (currentScroll > lastScrollTop) {
+            // Scrolling down
+            setScrollingUp(false);
+        } else {
+            // Scrolling up
+            setScrollingUp(true);
+        }
+        lastScrollTopRef.current = currentScroll;
 
-  return (
-    <div className={color?"header header-bg" : "header"}>
-        <Link to="/"><h1>Portfolio</h1></Link>
-        <ul className={click? "nav-menu activ" : "nav-menu"}>
-            <li>
-                <Link to="/">Home</Link>
-            </li>
-            <li>
-                <Link to="/about">About</Link>
-            </li>
-            <li>
-                <Link to="/projects">Projects</Link>
-            </li>
-            <li>
-                <Link to="/contact">Contact</Link>
-            </li>
-        </ul>
-        <div className="hamburger" onClick={handleClick}>
-  {click ? (
-    <FaTimes size={20} style={{ color: "#fff", cursor: "pointer" }} className="hamburger-icon" />
-  ) : (
-    <FaBars size={20} style={{ color: "#fff", cursor: "pointer" }} className="hamburger-icon" />
-  )}
-</div>
+        if (window.scrollY >= 100) {
+            setColor(true);
+        } else {
+            setColor(false);
+        }
+    }, []);
 
-    </div>
-  )
-}
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [handleScroll]);
 
-export default Navbar
+    return (
+        <div className={`${color ? "header header-bg" : "header"} ${scrollingUp ? "" : "header-hidden"}`}>
+            <Link to="/"><h1>Portfolio</h1></Link>
+            <ul className={click ? "nav-menu activ" : "nav-menu"}>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/projects">Projects</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
+            </ul>
+            <div className="hamburger" onClick={handleClick}>
+                {click ? (
+                    <FaTimes size={20} style={{ color: "#fff", cursor: "pointer" }} className="hamburger-icon" />
+                ) : (
+                    <FaBars size={20} style={{ color: "#fff", cursor: "pointer" }} className="hamburger-icon" />
+                )}
+            </div>
+        </div>
+    );
+};
+
+export default Navbar;
