@@ -1,33 +1,41 @@
-.project-heading{
+.project-heading {
     text-align: center;
     padding: 4rem 0 2rem 0;
 }
 
-.project-container{
-    max-width: 1140px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
+.project-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: flex-start; /* Align the cards to the start */
+    gap: 20px; /* Add gap between cards */
     padding-bottom: 5rem;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    max-width: 100%; /* Ensure the container stays within screen width */
+}
+
+.project-container::-webkit-scrollbar {
+    display: none; /* Optional: Hide scrollbar */
 }
 
 .project-card {
     background: #1a1919;
     padding: 1.2rem 1rem;
+    min-width: 300px; /* Set a minimum width */
+    max-width: 350px; /* Prevent cards from stretching too wide */
+    flex: 0 0 auto; /* Ensures consistent size and no shrinking */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: auto; 
-    min-height: 300px; 
 }
 
-
-.project-card img{
-width: 100%;
+.project-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
-.project-title{
+.project-title {
     color: white;
     padding: 1rem 0;
 }
@@ -39,20 +47,22 @@ width: 100%;
     flex-grow: 1;
 }
 
-.project-buttons{
+.project-buttons {
     display: flex;
     justify-content: center;
     padding-top: 0.5rem;
 }
 
-.project-buttons .btn{
-    padding: 0.4rem rem;
+.project-buttons .btn {
+    padding: 0.4rem 1.5rem;
 }
 
-@media screen and (max-width:740px){
-    .project-container{
-        max-width: 90%;
+/* Media query for smaller screens */
+@media screen and (max-width: 740px) {
+    .project-container {
+        flex-wrap: nowrap; /* Ensure cards don't wrap on small screens */
+        overflow-x: auto; /* Enable horizontal scroll on small screens */
+        max-width: 100%; /* Ensure container doesn't overflow screen */
         margin: auto;
-        grid-template-columns: 1fr;
     }
 }
