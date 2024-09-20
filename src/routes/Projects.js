@@ -4,6 +4,8 @@ import Navbar from '../components/Navbar'
 import Heroimg2 from '../components/Heroimg2'
 import '../components/WorkCard.jsx'
 import WorkCard from '../components/WorkCard.jsx'
+import '../styles/Project.css'
+
 
 const Projects = () => {
   return (

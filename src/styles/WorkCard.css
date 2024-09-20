@@ -5,13 +5,13 @@
 
 .project-container {
     display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping */
-    justify-content: flex-start; /* Align the cards to the start */
-    gap: 20px; /* Add gap between cards */
+    flex-wrap: nowrap; 
+    justify-content: flex-start; 
+    gap: 20px; 
     padding-bottom: 5rem;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    scroll-behavior: smooth; /* Smooth scrolling */
-    max-width: 100%; /* Ensure the container stays within screen width */
+    overflow-x: auto; 
+    scroll-behavior: smooth; 
+    max-width: 100%; 
 }
 
 .project-container::-webkit-scrollbar {
@@ -55,6 +55,29 @@
 
 .project-buttons .btn {
     padding: 0.4rem 1.5rem;
+}
+
+.arrow-right {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 20px auto; 
+    cursor: pointer;
+    color: #fff; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    width: 50px;
+    height: 50px;
+    padding: 0; 
+    border-radius: 50%; 
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: -40px; 
+}
+
+.arrow-right:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
 }
 
 /* Media query for smaller screens */

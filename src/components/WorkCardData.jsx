@@ -1,22 +1,22 @@
 import pro1a from '../assets/kisaan-link1.jpg'
-import pro2a from '../assets/expense1.jpeg'
+import pro2a from '../assets/anomalydetect1.jpg'
 import pro3a from '../assets/restaurant1.jpg'
-import pro4a from '../assets/anomalydetect1.jpg'
+import pro4a from '../assets/expense1.jpeg'
 import pro5a from '../assets/animefacegen2.png'
 
 const ProjectCardData = [
     {
         imgsrc: pro1a,
         title: "Kisaan Link",
-        text: "A platform for farmers to connect with buyers and sell their produce directly.",
+        text: "A platform for direct delivery of fresh farm produce from farmers to customers. It streamlines the supply chain, ensuring fresh, farm-to-table produce delivered directly to your doorstep.",
         view: "https://github.com/Rahul-on-git/kisaanLink"
     },
 
     {
         imgsrc: pro2a,
-        title: "Expense Tracker",
-        text: 'An application to keep track of your expenses in an efficient way.',
-        view: "https://github.com/Atharv-0123/Java_expense_Tracker.git"
+        title: "Anomaly detection in Time Series Data",
+        text: "A machine learning model that detects anomalies in time-series data using unsupervised ML methods.",
+        view: "https://link.springer.com/chapter/10.1007/978-3-031-35644-5_16"
     },
 
     {
@@ -28,9 +28,9 @@ const ProjectCardData = [
 
     {
         imgsrc: pro4a,
-        title: "Anomaly detection in Time Series Data",
-        text: "A machine learning model that detects anomalies in time-series data using unsupervised ML methods.",
-        view: "https://link.springer.com/chapter/10.1007/978-3-031-35644-5_16"
+        title: "Expense Tracker",
+        text: 'An application to keep track of your expenses in an efficient way.',
+        view: "https://github.com/Atharv-0123/Java_expense_Tracker.git"
     },
 
     {

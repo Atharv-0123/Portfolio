@@ -10,10 +10,10 @@ const Heroimg = () => {
       <img className="intro-img" src={IntroImg} alt="intro-img" />
       <div className='content'>
             <p>HI! I AM A DEVELOPER</p>
-            <h1>REACT DEVELOPER</h1>
+            <h1>Atharva Khangar</h1>
             <div>
                 <Link to="/projects" className='btn'>Projects</Link>
-                <Link to="https://drive.google.com/file/d/1IyzcnowQHG9RIFgxSp0c0OOQzE1tVf4F/view?usp=sharing" className='btn-light'>Resume</Link>
+                <Link to="https://drive.google.com/file/d/1IyzcnowQHG9RIFgxSp0c0OOQzE1tVf4F/view?usp=sharing" className='btn-light' target="_blank" rel="noopener noreferrer">Resume</Link>
             </div>
         </div>
     </div>
