@@ -13,7 +13,7 @@ const Heroimg = () => {
             <h1>REACT DEVELOPER</h1>
             <div>
                 <Link to="/projects" className='btn'>Projects</Link>
-                <Link to="/contact" className='btn-light'>Contact</Link>
+                <Link to="https://drive.google.com/file/d/1IyzcnowQHG9RIFgxSp0c0OOQzE1tVf4F/view?usp=sharing" className='btn-light'>Resume</Link>
             </div>
         </div>
     </div>

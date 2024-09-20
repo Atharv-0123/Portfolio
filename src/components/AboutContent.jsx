@@ -8,9 +8,9 @@ const AboutContent = () => {
     <div className='about'>
         <div className='left'>
             <h1> Who am I?</h1>
-            <p>I am a a developer</p>
-            <Link to='/contact'>
-                <button> Contact me</button>
+            <p>I am an AI & Data Science engineering graduate who loves to work on all kinds of new technologies like web development, AI, Machine Learning, Data science.</p>
+            <Link to='/contact' className='btn'>
+                 Contact Me
             </Link>
         </div>
         <div className='right'>
