@@ -1,7 +1,0 @@
-Add education to about me 
-
-Add view resume button in home page   
-
-Add option to directly send msg via mail in contact
-
-Add knowledge based chatbot globally
