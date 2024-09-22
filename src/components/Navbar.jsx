@@ -6,7 +6,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 const Navbar = () => {
     const [click, setClick] = useState(false);
     const [color, setColor] = useState(false);
-    const [scrollingUp, setScrollingUp] = useState(false);
+    const [scrollingUp, setScrollingUp] = useState(true);
     const lastScrollTopRef = useRef(0);
 
     const handleClick = () => setClick(!click);

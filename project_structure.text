@@ -1,0 +1,72 @@
+- .gitignore
+- package-lock.json
+- package.json
+- public
+  - favicon.ico
+  - index.html
+  - logo192.png
+  - logo512.png
+  - manifest.json
+  - robots.txt
+- README.md
+- src
+  - App.js
+  - assets
+    - animefacegen.png
+    - animefacegen2.png
+    - anomalydetect1.jpg
+    - anomalydetect2.jpg
+    - anomalydetect3.jpg
+    - aws.png
+    - contact2.jpg
+    - cool-background.png
+    - docker.png
+    - expense1.jpeg
+    - expense2.jpeg
+    - git.png
+    - github.png
+    - intro-bg.jpg
+    - java.png
+    - js.png
+    - kisaan-link1.jpg
+    - kisaan-link2.jpg
+    - mongodb.png
+    - mysql.png
+    - node.png
+    - postman.png
+    - python.png
+    - react.png
+    - restaurant1.jpg
+    - restaurant2.jpg
+  - components
+    - AboutContent.jsx
+    - Footer.jsx
+    - Form.jsx
+    - Heroimg.jsx
+    - Heroimg2.jsx
+    - Navbar.jsx
+    - TechStack.jsx
+    - TechStackData.jsx
+    - Work.jsx
+    - WorkCard.jsx
+    - WorkCardData.jsx
+  - index.js
+  - logo.svg
+  - routes
+    - About.js
+    - Contact.js
+    - Home.js
+    - Projects.js
+  - setupTests.js
+  - styles
+    - AboutContent.css
+    - App.css
+    - Footer.css
+    - Form.css
+    - Heroimg.css
+    - Heroimg2.css
+    - index.css
+    - Navbar.css
+    - Project.css
+    - TechStack.css
+    - WorkCard.css

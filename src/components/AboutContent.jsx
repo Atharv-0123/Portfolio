@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom'
 import '../styles/AboutContent.css'
-
 import React from 'react'
-
+// import aboutImage from '../assets/bg3.png'
 const AboutContent = () => {
   return (
     <div className='about'>
