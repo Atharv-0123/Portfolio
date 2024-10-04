@@ -19,11 +19,11 @@
 .intro-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the full area without distortion */
-  position: absolute; /* Allows layering and control with z-index */
+  object-fit: cover; 
+  position: absolute; 
   top: 0;
   left: 0;
-  z-index: 0; /* Sits below the mask and content */
+  z-index: 0;
 }
 
 /* Content Styling */

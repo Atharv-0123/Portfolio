@@ -27,6 +27,10 @@
     align-items: center;
 }
 
+body{
+  background-image: url("../assets/tech-bg.png");
+}
+
 /* Icon styling */
 .techstack-icon {
     width: 70px;
