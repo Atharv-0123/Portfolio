@@ -41,7 +41,7 @@ body{
 }
 
 .techstack-icon:hover {
-    animation: bounce 0.7s;
+    animation: bounce 0.5s;
 }
 
 @keyframes bounce {
