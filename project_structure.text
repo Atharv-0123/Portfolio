@@ -1,6 +1,8 @@
+- .env
 - .gitignore
 - package-lock.json
 - package.json
+- project_structure.text
 - public
   - favicon.ico
   - index.html
@@ -12,24 +14,18 @@
 - src
   - App.js
   - assets
-    - animefacegen.png
+    - about-intro.jpg
     - animefacegen2.png
     - anomalydetect1.jpg
-    - anomalydetect2.jpg
-    - anomalydetect3.jpg
     - aws.png
-    - contact2.jpg
-    - cool-background.png
     - docker.png
     - expense1.jpeg
-    - expense2.jpeg
     - git.png
     - github.png
     - intro-bg.jpg
     - java.png
     - js.png
     - kisaan-link1.jpg
-    - kisaan-link2.jpg
     - mongodb.png
     - mysql.png
     - node.png
@@ -37,13 +33,14 @@
     - python.png
     - react.png
     - restaurant1.jpg
-    - restaurant2.jpg
+    - tech-bg.png
   - components
     - AboutContent.jsx
     - Footer.jsx
     - Form.jsx
     - Heroimg.jsx
     - Heroimg2.jsx
+    - Heroimg3.jsx
     - Navbar.jsx
     - TechStack.jsx
     - TechStackData.jsx
@@ -57,7 +54,6 @@
     - Contact.js
     - Home.js
     - Projects.js
-  - setupTests.js
   - styles
     - AboutContent.css
     - App.css
@@ -65,8 +61,10 @@
     - Form.css
     - Heroimg.css
     - Heroimg2.css
+    - Heroimg3.css
     - index.css
     - Navbar.css
     - Project.css
     - TechStack.css
     - WorkCard.css
+- ToDo.text

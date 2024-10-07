@@ -1,6 +1,5 @@
 node_modules
 requirements.txt
 package-lock.json
-package.json
 ToDo.text
 .env
