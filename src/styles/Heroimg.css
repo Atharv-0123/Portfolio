@@ -1,18 +1,18 @@
 .hero {
-  position: relative; /* Ensures the mask and content can be positioned absolutely within */
+  position: relative; 
   height: 100vh;
   width: 100%;
-  overflow: hidden; /* Prevents content overflow */
+  overflow: hidden; 
 }
 
 .mask {
-  position: absolute; /* Positions it on top of the image */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); 
-  z-index: 1; /* Ensures it sits above the image but below the content */
+  background-color: rgba(0, 0, 0, 0.854); 
+  z-index: 1; 
 }
 
 /* Intro Image Styling */
@@ -28,7 +28,7 @@
 
 /* Content Styling */
 .hero .content {
-  position: relative; /* Positions content within the hero */
+  position: relative; 
   z-index: 2; 
   transform: translate(-50%, -50%);
   top: 50%;
@@ -38,15 +38,15 @@
 }
 
 .hero .content h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 0.6rem 0 1.5rem;
+  text-transform: capitalize;
 }
 
 .hero .content p {
   font-family: cursive;
   font-size: 1.8rem;
   font-weight: 200;
-  /* text-transform: uppercase; */
   margin: 1rem 0; 
 }
 

@@ -7,7 +7,7 @@ const AboutContent = () => {
     <div className='about'>
         <div className='left'>
             <h1> Who am I?</h1>
-            <p>An AI & Data Science engineering graduate passionate about exploring and working with a wide range of emerging technologies, including web development, AI, machine learning, and data science.</p>
+            <p>An AI & Data Science engineering graduate passionate about exploring and working with a wide range of emerging technologies including web development, AI, machine learning, and data science.</p>
             <Link to='/contact' className='btn'>
                  Contact Me
             </Link>
