@@ -23,7 +23,7 @@ const ProjectCardData = [
         imgsrc: pro3a,
         title: "Restaurant Recommendation",
         text: "An ML model for recommending restaurants based on customers preferences, reviews and ratings.",
-        view: "https://github.com/Rahul-on-git/kisaanLink"
+        view: "https://github.com/Atharv-0123/Restaurant-Reccomendation-System.git"
     },
 
     {
@@ -37,7 +37,7 @@ const ProjectCardData = [
         imgsrc: pro5a,
         title: "Animated Face Generator",
         text: "A machine learning model that generated animated faces using generative AI methodologies.",
-        view: "https://github.com/Rahul-on-git/kisaanLink"
+        view: "https://github.com/Atharv-0123/Face_Generator-DCGAN.git"
     }
 
 ];
