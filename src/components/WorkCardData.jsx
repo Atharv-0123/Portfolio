@@ -29,7 +29,7 @@ const ProjectCardData = [
     {
         imgsrc: pro4a,
         title: "Expense Tracker",
-        text: 'An application to keep track of your expenses in an efficient way.',
+        text: 'A Java application to keep track of and manage your expenses in an efficient way.',
         view: "https://github.com/Atharv-0123/Java_expense_Tracker.git"
     },
 
