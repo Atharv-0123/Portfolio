@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Form.css'; // Assuming Form.css exists
+import '../styles/Form.css'; 
 
 const Form = () => {
   const accessKey = process.env.REACT_APP_WEB3FORMS_ACCESS_KEY;

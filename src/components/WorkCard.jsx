@@ -10,7 +10,7 @@ const WorkCard = () => {
   const scrollRight = () => {
     if (projectContainerRef.current) {
       projectContainerRef.current.scrollBy({
-        left: 300,
+        left: 360,
         behavior: 'smooth',
       });
     }
